@@ -1,0 +1,38 @@
+def extract_calibration_values(input_string):
+    # Split the input string by lines
+    lines = input_string.split('\n')  
+    calibration_values = []
+    
+    for line in lines:
+        first_digit = None
+        last_digit = None
+        
+        # Find the first digit
+        for char in line:
+            if char.isdigit():
+                first_digit = int(char)
+                break
+        
+        # Find the last digit
+        for char in reversed(line):
+            if char.isdigit():
+                last_digit = int(char)
+                break
+        
+        # If both digits are found, calculate calibration value
+        if first_digit is not None and last_digit is not None:
+            calibration_value = int(str(first_digit) + str(last_digit))
+            calibration_values.append(calibration_value)
+    
+    return calibration_values
+
+# Example input string
+input_string = '''tsgbzmgbonethreedrqzbhxjkvcnm3
+7qlpsnhbmnconeeight78
+prbqsfzqn57
+ctrv3hmvjphrffktwothree
+9six9qbgcvljfvccdjslspprgonenine'''
+
+# Extract calibration values from the input string
+calibration_values_list = extract_calibration_values(input_string)
+print(calibration_values_list)
