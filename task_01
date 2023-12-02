@@ -26,6 +26,9 @@ def extract_calibration_values(input_string):
     
     return calibration_values
 
+def sum_calibration_values(calibration_values):
+    return sum(calibration_values)
+
 # Example input string
 input_string = '''tsgbzmgbonethreedrqzbhxjkvcnm3
 7qlpsnhbmnconeeight78
@@ -35,4 +38,8 @@ ctrv3hmvjphrffktwothree
 
 # Extract calibration values from the input string
 calibration_values_list = extract_calibration_values(input_string)
-print(calibration_values_list)
+print("Calibration Values:", calibration_values_list)
+
+# Calculate the sum of calibration values
+total_sum = sum_calibration_values(calibration_values_list)
+print("Total Sum of Calibration Values:", total_sum)
