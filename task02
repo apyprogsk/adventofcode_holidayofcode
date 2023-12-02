@@ -1,0 +1,8 @@
+# Assuming the long string is stored in a variable called 'long_string'
+long_string = "<your long string here>"
+
+# Splitting the string by newline character
+lines = long_string.split('\n')
+
+# Outputting the list of lines
+print(lines)
