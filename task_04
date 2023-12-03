@@ -57,3 +57,174 @@ for game in parsed_games:
 
 
 
+
+
+data = [
+    {'Game': 1, 'red': [4, 6, 13, 4], 'green': [8, 8, 8, 4], 'blue': [2]},
+{'Game': 2, 'blue': [5, 3, 7, 8, 7, 4], 'red': [1, 1, 1, 1, 1], 'green': [1, 1]},
+{'Game': 3, 'blue': [8, 6, 10, 6, 2], 'green': [5, 3, 2, 6, 5], 'red': [15, 6, 8, 10, 8, 15]},
+{'Game': 4, 'green': [10, 5, 7], 'red': [12, 9, 12, 11], 'blue': [14, 7, 14, 8]},
+{'Game': 5, 'blue': [13, 4, 5, 2, 14, 11], 'red': [10, 8, 16, 9, 5, 2], 'green': [7, 3, 5, 7, 3, 2]},
+{'Game': 6, 'blue': [3, 6, 5, 2, 5], 'green': [1, 10, 3, 11, 9], 'red': [12, 2, 2, 1]},
+{'Game': 7, 'blue': [2, 10, 8, 10], 'green': [10, 3, 8], 'red': [3, 5, 2]},
+{'Game': 8, 'red': [15, 10, 10], 'blue': [12, 12], 'green': [5, 5, 7]},
+{'Game': 9, 'blue': [18, 9, 1, 7, 1], 'red': [14, 11, 5, 8], 'green': [3, 3, 4]},
+{'Game': 10, 'blue': [2, 4, 4, 3, 2, 2], 'green': [10, 5, 4, 3, 3], 'red': [3, 4, 1, 5, 2]},
+{'Game': 11, 'blue': [4, 19, 10, 18, 18, 15], 'green': [19, 12, 17, 9, 14, 6], 'red': [17, 11, 9, 19]},
+{'Game': 12, 'green': [1, 8, 2, 6], 'blue': [6, 6, 7, 3], 'red': [2, 2, 2, 1]},
+{'Game': 13, 'red': [2, 2, 1, 1, 1], 'blue': [11, 7, 12, 13, 11, 2], 'green': [4, 9, 8, 8]},
+{'Game': 14, 'green': [1, 11, 7, 11], 'blue': [4, 6, 6, 12], 'red': [11, 7, 4, 10]},
+{'Game': 15, 'green': [1], 'red': [19, 11, 20], 'blue': [3, 3, 4]},
+{'Game': 16, 'red': [3, 4, 7], 'green': [1, 1, 3], 'blue': [7, 3, 6]},
+{'Game': 17, 'blue': [7, 4], 'red': [4, 4, 2], 'green': [19, 7, 8]},
+{'Game': 18, 'red': [1, 2, 1], 'blue': [1, 1, 1], 'green': [6, 6, 4]},
+{'Game': 19, 'blue': [4, 4, 6, 6, 4], 'green': [8, 9, 9, 9, 7], 'red': [6, 2, 8, 3, 8]},
+{'Game': 20, 'blue': [3, 13, 14, 8], 'green': [7, 6], 'red': [13, 12, 3]},
+{'Game': 21, 'green': [5, 2, 7, 2], 'red': [2, 2, 1, 1], 'blue': [10, 6, 1, 4]},
+{'Game': 22, 'red': [2, 7, 3, 4], 'green': [1, 1, 5, 2], 'blue': [1, 3, 1]},
+{'Game': 23, 'red': [15, 2, 4], 'blue': [1, 6, 1], 'green': [3, 3, 6]},
+{'Game': 24, 'green': [17, 3, 1, 1, 1], 'red': [1, 1], 'blue': [2, 10, 2]},
+{'Game': 25, 'green': [2, 9, 2], 'blue': [8, 1, 1, 6], 'red': [1, 1, 2, 3]},
+{'Game': 26, 'red': [12, 2, 17, 15], 'green': [19, 15, 3, 1], 'blue': [4, 10, 14, 3]},
+{'Game': 27, 'green': [11, 3, 9, 4, 5, 5], 'red': [1, 1, 1, 2, 2], 'blue': [9, 10, 10, 3, 2, 17]},
+{'Game': 28, 'green': [10, 8, 3, 8, 1], 'red': [10, 5, 10, 1, 6], 'blue': [5, 4, 3, 2, 4]},
+{'Game': 29, 'blue': [3, 5, 12, 1], 'red': [11, 6, 8, 4], 'green': [1, 3, 10, 1]},
+{'Game': 30, 'blue': [10, 8, 4, 3, 14], 'red': [1, 1, 1], 'green': [2, 2, 3, 5, 3]},
+{'Game': 31, 'red': [3, 11, 11, 5, 15], 'green': [7, 4, 1, 6, 4], 'blue': [6, 2, 8, 5, 3]},
+{'Game': 32, 'green': [9, 7, 6], 'blue': [1, 1], 'red': [10, 13, 12]},
+{'Game': 33, 'green': [9, 1, 9], 'red': [4, 2, 11], 'blue': [6, 4, 2]},
+{'Game': 34, 'green': [8, 3, 9, 10, 2], 'red': [6, 6, 1, 2], 'blue': [4, 1, 2, 2]},
+{'Game': 35, 'blue': [4, 1, 1], 'green': [8, 10, 5, 4, 6], 'red': [8, 8, 6]},
+{'Game': 36, 'red': [4, 5, 1, 4, 1], 'blue': [10, 18, 11, 10, 17, 9], 'green': [16, 5, 16, 6, 9, 14]},
+{'Game': 37, 'red': [1, 2, 5], 'green': [13, 12, 5, 9], 'blue': [5, 12, 11, 4]},
+{'Game': 38, 'green': [1, 1], 'blue': [12, 11, 11, 2], 'red': [1, 3, 17, 8]},
+{'Game': 39, 'blue': [11, 1, 6], 'red': [12, 4, 3], 'green': [1, 1, 3]},
+{'Game': 40, 'blue': [1, 2, 4], 'red': [1, 2, 3, 4, 3], 'green': [9, 9, 8, 3]},
+{'Game': 41, 'blue': [7, 1, 5, 4, 9], 'red': [8, 4, 6, 9, 5], 'green': [3, 7, 5, 2]},
+{'Game': 42, 'blue': [8, 13, 3, 12, 5], 'green': [17, 11, 14, 2, 18, 10], 'red': [7, 6, 7, 2, 8]},
+{'Game': 43, 'green': [5, 5, 6, 1], 'red': [9, 3, 10, 2], 'blue': [3, 1, 8]},
+{'Game': 44, 'red': [1, 6, 8, 2, 3], 'blue': [5, 2, 4, 1], 'green': [4, 12, 9, 5]},
+{'Game': 45, 'blue': [9, 10, 10, 11], 'red': [5, 8, 1, 2, 11], 'green': [6, 7, 1, 1]},
+{'Game': 46, 'blue': [14, 8, 7, 10], 'green': [8, 10, 12, 14], 'red': [2, 2]},
+{'Game': 47, 'blue': [5, 5, 3], 'green': [7, 5, 8, 2], 'red': [1, 3, 2, 2]},
+{'Game': 48, 'red': [2, 3, 1], 'blue': [2, 1, 1, 8], 'green': [1, 1, 3]},
+{'Game': 49, 'red': [7, 8, 4], 'blue': [2, 2], 'green': [8, 4, 8]},
+{'Game': 50, 'red': [9, 11, 16, 13, 1], 'blue': [4, 4, 2, 9, 6], 'green': [10, 7, 4, 3]},
+{'Game': 51, 'blue': [8, 2, 4, 2, 6], 'red': [2, 2, 1, 1], 'green': [3, 1, 2, 5]},
+{'Game': 52, 'blue': [12, 11, 8, 11, 12], 'red': [8, 9, 8, 3, 5, 10], 'green': [11, 5, 11, 6, 8]},
+{'Game': 53, 'green': [9, 5, 11, 9], 'red': [6, 3, 2, 4], 'blue': [3, 4, 5]},
+{'Game': 54, 'blue': [13, 15, 1, 8, 12, 2], 'green': [8, 7, 8, 6, 1, 9], 'red': [3, 3, 3, 3]},
+{'Game': 55, 'red': [2, 1, 4, 3, 1, 1], 'blue': [1, 4, 4, 1, 2, 5], 'green': [2, 3, 7, 7, 4, 4]},
+{'Game': 56, 'green': [14, 3, 3, 2], 'blue': [1, 1, 8, 7, 12], 'red': [4, 3, 10, 8, 4, 7]},
+{'Game': 57, 'blue': [7, 5, 8], 'green': [8, 7, 9], 'red': [6, 3, 2]},
+{'Game': 58, 'green': [7, 9, 9, 1, 5, 7], 'red': [8, 7, 3, 2], 'blue': [3, 5, 4, 2, 5]},
+{'Game': 59, 'blue': [2, 8, 10, 7, 3], 'green': [10, 1, 7, 1, 5], 'red': [10, 1, 2]},
+{'Game': 60, 'green': [1, 2, 2], 'blue': [2, 2], 'red': [5, 3]},
+{'Game': 61, 'green': [3, 10, 8, 5, 12, 13], 'red': [2, 7, 3, 1, 6], 'blue': [2, 2, 1, 1]},
+{'Game': 62, 'green': [11, 10, 11], 'red': [2, 3, 1], 'blue': [3, 2, 3]},
+{'Game': 63, 'blue': [7, 8, 14], 'red': [7, 5], 'green': [1, 1]},
+{'Game': 64, 'green': [2, 2, 1], 'blue': [12, 18, 9, 15], 'red': [1, 10, 13, 1]},
+{'Game': 65, 'blue': [6, 9, 1, 4, 7], 'red': [8, 9, 9, 10, 5], 'green': [8, 2, 3, 2, 5]},
+{'Game': 66, 'red': [14, 12, 5, 12], 'green': [3, 7, 8, 5, 5], 'blue': [9, 3, 1, 4, 14]},
+{'Game': 67, 'blue': [1, 1, 2, 1, 2], 'red': [9, 12, 13, 1, 10], 'green': [7, 9, 4, 5]},
+{'Game': 68, 'green': [12, 4, 14, 6, 4], 'red': [2, 1, 3, 3], 'blue': [7, 4, 6, 7]},
+{'Game': 69, 'green': [2, 3, 6], 'blue': [17, 6, 11], 'red': [9, 4, 4]},
+{'Game': 70, 'blue': [11, 10, 9, 6, 10], 'red': [10, 9, 2, 6, 8], 'green': [12, 5, 3, 5, 12]},
+{'Game': 71, 'blue': [7, 11, 5], 'red': [3, 1, 1], 'green': [1, 1]},
+{'Game': 72, 'red': [9, 15, 5, 4], 'blue': [7, 6, 6, 4, 4], 'green': [1, 1]},
+{'Game': 73, 'green': [10, 1, 1, 9], 'red': [4, 5, 3, 6], 'blue': [1]},
+{'Game': 74, 'red': [6, 9, 2], 'blue': [3, 1, 1], 'green': [8, 5, 1]}, 
+{'Game': 75, 'blue': [2, 3, 1, 3], 'green': [3, 7, 6, 5, 7], 'red': [1, 1]},
+{'Game': 76, 'red': [4, 7, 3, 1, 4], 'blue': [2, 2, 1], 'green': [1, 1, 1]},
+{'Game': 77, 'green': [18, 16], 'red': [19, 18, 10], 'blue': [11, 1, 5]},
+{'Game': 78, 'red': [3, 2, 6], 'blue': [8, 3, 12], 'green': [1, 1]},
+{'Game': 79, 'red': [5, 4, 8, 5], 'green': [4, 5, 5, 6, 5], 'blue': [9, 3, 2, 7, 7]},
+{'Game': 80, 'green': [8, 8, 6], 'red': [11, 15, 14], 'blue': [3, 4]},
+{'Game': 81, 'green': [11, 7, 2, 3, 1], 'red': [5, 4, 7, 10, 3], 'blue': [14, 8, 18]},
+{'Game': 82, 'blue': [2, 7, 4, 10, 8, 7], 'red': [5, 5, 2, 2, 2, 3], 'green': [3, 3, 2, 3]},
+{'Game': 83, 'red': [7, 5, 9, 1, 5, 3], 'green': [12, 17, 20, 11], 'blue': [1, 5, 3, 2, 6, 2]},
+{'Game': 84, 'blue': [1, 10, 1, 4, 12, 2], 'red': [7, 6, 6, 8, 3, 3], 'green': [6, 8, 8, 6, 8, 7]},
+{'Game': 85, 'blue': [1, 9, 7, 2, 9], 'green': [1, 9, 10, 7, 3, 5], 'red': [8, 2, 12, 7, 7, 11]},
+{'Game': 86, 'blue': [4, 7, 8], 'red': [8, 4, 12, 3], 'green': [3, 4, 4]},
+{'Game': 87, 'blue': [6, 5, 3, 11, 11], 'green': [19, 20, 9, 7, 17], 'red': [5, 5, 8, 7]},
+{'Game': 88, 'green': [1, 11, 6, 2, 8], 'red': [2, 3, 1], 'blue': [5, 2, 3, 4, 4]},
+{'Game': 89, 'red': [19, 1, 15], 'green': [15, 17, 13], 'blue': [10, 4, 10]},
+{'Game': 90, 'blue': [3, 4, 5, 3, 4], 'red': [1, 1, 3, 4, 4], 'green': [1, 4, 4, 2, 2]},
+{'Game': 91, 'red': [8, 4, 6, 11, 4], 'blue': [4, 5, 7, 14], 'green': [16, 17, 10]},
+{'Game': 93, 'blue': [11, 6, 4], 'red': [7, 8, 6], 'green': [8, 5, 4]},
+{'Game': 94, 'green': [2, 5, 7, 1, 1, 5], 'blue': [1, 4, 2, 3, 2, 3], 'red': [5, 5, 5, 1]},
+{'Game': 95, 'red': [3, 4, 5], 'green': [7], 'blue': [7, 5]},
+{'Game': 96, 'red': [3, 14, 3, 15], 'blue': [5, 3, 7, 5], 'green': [1, 2, 2]},
+{'Game': 97, 'red': [17, 18], 'green': [8, 9, 4], 'blue': [6, 8]},
+{'Game': 98, 'blue': [9, 6, 12], 'green': [2, 3], 'red': [4, 2, 14]},
+{'Game': 99, 'red': [4, 2, 5], 'green': [3, 7, 2], 'blue': [3, 2, 3]},
+{'Game': 100, 'green': [5, 11, 12], 'red': [7, 9], 'blue': [4, 8, 2]},
+]
+
+highest_values = []
+
+for entry in data:
+    highest = {}
+    for key, value in entry.items():
+        if key != 'Game':
+            highest[key] = max(value)
+    highest_values.append(highest)
+
+print(highest_values)
+
+
+
+
+
+
+
+
+
+
+
+data = [{'red': 13, 'green': 8, 'blue': 2}, {'blue': 8, 'red': 1, 'green': 1}, {'blue': 10, 'green': 6, 'red': 15}, {'green': 10, 'red': 12, 'blue': 14}, {'blue': 14, 'red': 16, 'green': 7}, {'blue': 6, 'green': 11, 'red': 12}, {'blue': 10, 'green': 10, 'red': 5}, {'red': 15, 'blue': 12, 'green': 7}, {'blue': 18, 'red': 14, 'green': 4}, {'blue': 4, 'green': 10, 'red': 5}, {'blue': 19, 'green': 19, 'red': 19}, {'green': 8, 'blue': 7, 'red': 2}, {'red': 2, 'blue': 13, 'green': 9}, {'green': 11, 'blue': 12, 'red': 11}, {'green': 1, 'red': 20, 'blue': 4}, {'red': 7, 'green': 3, 'blue': 7}, {'blue': 7, 'red': 4, 'green': 19}, {'red': 2, 'blue': 1, 'green': 6}, {'blue': 6, 'green': 9, 'red': 8}, {'blue': 14, 'green': 7, 'red': 13}, {'green': 7, 'red': 2, 'blue': 10}, {'red': 7, 'green': 5, 'blue': 3}, {'red': 15, 'blue': 6, 'green': 6}, {'green': 17, 'red': 1, 'blue': 10}, {'green': 9, 'blue': 8, 'red': 3}, {'red': 17, 'green': 19, 'blue': 14}, {'green': 11, 'red': 2, 'blue': 17}, {'green': 10, 'red': 10, 'blue': 5}, {'blue': 12, 'red': 11, 'green': 10}, {'blue': 14, 'red': 1, 'green': 5}, {'red': 15, 'green': 7, 'blue': 8}, {'green': 9, 'blue': 1, 'red': 13}, {'green': 9, 'red': 11, 'blue': 6}, {'green': 10, 'red': 6, 'blue': 4}, {'blue': 4, 'green': 10, 'red': 8}, {'red': 5, 'blue': 18, 'green': 16}, {'red': 5, 'green': 13, 'blue': 12}, {'green': 1, 'blue': 12, 'red': 17}, {'blue': 11, 'red': 12, 'green': 3}, {'blue': 4, 'red': 4, 'green': 9}, {'blue': 9, 'red': 9, 'green': 7}, {'blue': 13, 'green': 18, 'red': 8}, {'green': 6, 'red': 10, 'blue': 8}, {'red': 8, 'blue': 5, 'green': 12}, {'blue': 11, 'red': 11, 'green': 7}, {'blue': 14, 'green': 14, 'red': 2}, {'blue': 5, 'green': 8, 'red': 3}, {'red': 3, 'blue': 8, 'green': 3}, {'red': 8, 'blue': 2, 'green': 8}, {'red': 16, 'blue': 9, 'green': 10}, {'blue': 8, 'red': 2, 'green': 5}, {'blue': 12, 'red': 10, 'green': 11}, {'green': 11, 'red': 6, 'blue': 5}, {'blue': 15, 'green': 9, 'red': 3}, {'red': 4, 'blue': 5, 'green': 7}, {'green': 14, 'blue': 12, 'red': 10}, {'blue': 8, 'green': 9, 'red': 6}, {'green': 9, 'red': 8, 'blue': 5}, {'blue': 10, 'green': 10, 'red': 10}, {'green': 2, 'blue': 2, 'red': 5}, {'green': 13, 'red': 7, 'blue': 2}, {'green': 11, 'red': 3, 'blue': 3}, {'blue': 14, 'red': 7, 'green': 1}, {'green': 2, 'blue': 18, 'red': 13}, {'blue': 9, 'red': 10, 'green': 8}, {'red': 14, 'green': 8, 'blue': 14}, {'blue': 2, 'red': 13, 'green': 9}, {'green': 14, 'red': 3, 'blue': 7}, {'green': 6, 'blue': 17, 'red': 9}, {'blue': 11, 'red': 10, 'green': 12}, {'blue': 11, 'red': 3, 'green': 1}, {'red': 15, 'blue': 7, 'green': 1}, {'green': 10, 'red': 6, 'blue': 1}, {'red': 9, 'blue': 3, 'green': 8}, {'blue': 3, 'green': 7, 'red': 1}, {'red': 7, 'blue': 2, 'green': 1}, {'green': 18, 'red': 19, 'blue': 11}, {'red': 6, 'blue': 12, 'green': 1}, {'red': 8, 'green': 6, 'blue': 9}, {'green': 8, 'red': 15, 'blue': 4}, {'green': 11, 'red': 10, 'blue': 18}, {'blue': 10, 'red': 5, 'green': 3}, {'red': 9, 'green': 20, 'blue': 6}, {'blue': 12, 'red': 8, 'green': 8}, {'blue': 9, 'green': 10, 'red': 12}, {'blue': 8, 'red': 12, 'green': 4}, {'blue': 11, 'green': 20, 'red': 8}, {'green': 11, 'red': 3, 'blue': 5}, {'red': 19, 'green': 17, 'blue': 10}, {'blue': 5, 'red': 4, 'green': 4}, {'red': 11, 'blue': 14, 'green': 17}, {'blue': 11, 'red': 8, 'green': 8}, {'green': 7, 'blue': 4, 'red': 5}, {'red': 5, 'green': 7, 'blue': 7}, {'red': 15, 'blue': 7, 'green': 2}, {'red': 18, 'green': 9, 'blue': 8}, {'blue': 12, 'green': 3, 'red': 14}, {'red': 5, 'green': 7, 'blue': 3}, {'green': 12, 'red': 9, 'blue': 8}]
+
+result = []
+
+for entry in data:
+    multiplied_value = 1
+    for key, value in entry.items():
+        if key in ['blue', 'red', 'green']:
+            multiplied_value *= value
+    result.append(multiplied_value)
+
+print(result)
+
+
+
+
+
+
+
+
+data = [
+    {'blue': 6, 'red': 4, 'green': 2},
+    {'blue': 4, 'green': 3, 'red': 1},
+    {'green': 13, 'blue': 6, 'red': 20},
+    {'green': 3, 'red': 14, 'blue': 15},
+    {'red': 6, 'blue': 2, 'green': 3}
+]
+
+result = []
+
+multiplication_results = []
+
+for entry in data:
+    multiplied_value = 1
+    for key, value in entry.items():
+        if key in ['blue', 'red', 'green']:
+            multiplied_value *= value
+    multiplication_results.append(multiplied_value)
+
+# Calculating the sum of multiplication results
+total = sum(multiplication_results)
+
+# Generating formatted output
+formatted_output = " + ".join(str(val) for val in multiplication_results) + f" = {total}"
+
+print(formatted_output)
